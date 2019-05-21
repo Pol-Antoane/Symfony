@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Les Pokémons sont magiques{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #FFFFFF; padding: 2px 6px; }
+</style>
+
+<div class="wrapper">
+<hi>Bonjour {{app.user.username}}</hi>
+	<p> Pokemons </p>
+    <p><a href="bag"> Sac </a></p>
+    <p> Combat </p>
+    <p><a href="{{path('app_logout')}}"> Se déconnecter </p>
+</div>
+{% endblock %}
