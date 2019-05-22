@@ -26,7 +26,7 @@ class PotionFixtures extends Fixture
 
     public function getPotions()
     {
-        // [name, healingRate]
+        // [name, power]
         return [
             ['Potion éco+', 20],
             ['Potion Gucchi', 50],

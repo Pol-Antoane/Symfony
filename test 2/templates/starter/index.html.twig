@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello StarterController!{% endblock %}
+{% block title %}Bienvenue dans le starter!{% endblock %}
 
 {% block body %}
 <style>
@@ -27,9 +27,9 @@
             {% elseif starter.Type == 4 %}
                 <td></td>
             </ul>
-            {% for Attacc in starter.Attacc %}
+            {% for Attack in starter.Attack %}
             <ul>
-                <td>Attaque : {{ Attacc.Name }} </td>
+                <td>Attaque : {{ Attack.Name }} </td>
             </ul>
             {% endfor %}
         </li>
